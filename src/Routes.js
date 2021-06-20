@@ -12,7 +12,7 @@ Routes.get("/api/whoami", (req, res) => {
   const userAgent = headers["user-agent"];
   const acceptLanguage = headers["accept-language"];
 
-  res.json({ ipadress: host, software: userAgent, language: acceptLanguage });
+  res.json({ ipaddress: host, software: userAgent, language: acceptLanguage });
 });
 
 module.exports = Routes;
